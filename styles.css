@@ -25,7 +25,7 @@
     color: #FFD894;
   }
 
-  .dot {
+  .dotMax {
   height: 200px;
   width: 200px;
   background-color: #bbb;
@@ -34,6 +34,137 @@
   position:absolute;
   align-items: center;
   transform: translateX(-100px);
+  animation: rainbow2 5s linear infinite;
+  animation-play-state: paused;
+  }
+  .dotBig {
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  align-items: center;
+  transform: translateX(-75px) translateY(25px);
+  animation: rainbow2 5.1s linear infinite;
+  animation-play-state: paused;
+  visibility: hidden;
+  }
+  .dotMedium{
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  align-items: center;
+  transform: translateX(-50px) translateY(50px);
+  animation: rainbow2 5.2s linear infinite;
+  animation-play-state: paused;
+  visibility: hidden;
+  }
+  .dotSmall{
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  align-items: center;
+  transform: translateX(-25px) translateY(75px);
+  animation: rainbow2 5.3s linear infinite;
+  animation-play-state: paused;
+  visibility: hidden;
+  }
+
+  .dotTiny {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+  align-items: center;
+  transform: translateX(-10px) translateY(90px);
+  animation: rainbow2 5.4s linear infinite;
+  animation-play-state: paused;
+  visibility: hidden;
+  }
+
+  .dotMax:active  {
+    background-color: rgb 255, 0, 0);
+    animation-play-state: running;
+    visibility: visible;
+  }
+  .dotMax:active .dotBig {
+   animation-play-state: running;
+   visibility: visible;
+  }
+  .dotMax:active .dotMedium {
+   animation-play-state: running;
+   visibility: visible;
+  }
+  .dotMax:active .dotSmall {
+   animation-play-state: running;
+   visibility: visible;
+  }
+  .dotMax:active .dotTiny {
+   animation-play-state: running;
+   visibility: visible;
+  }
+  @keyframes rainbow {
+    0% {background-color: #FF0000}
+    4% {background-color: #FF4000}
+    8% {background-color: #FF8000}
+    12% {background-color: #FFBF00}
+    16% {background-color: #FFFF00}
+    20% {background-color: #BFFF00}
+    24% {background-color: #80FF00}
+    28% {background-color: #40FF00}
+    36% {background-color: #00FF00}
+    40% {background-color: #00FF40}
+    44% {background-color: #00FF80}
+    48% {background-color: #00FFBF}
+    52% {background-color: #00FFFF}
+    56% {background-color: #00BFFF}
+    60% {background-color: #0080FF}
+    64% {background-color: #0040FF}
+    68% {background-color: #0000FF}
+    72% {background-color: #4000FF}
+    76% {background-color: #8000FF}
+    80% {background-color: #BF00FF}
+    84% {background-color: #FF00FF}
+    88% {background-color: #FF00BF}
+    92% {background-color: #FF0080}
+    96% {background-color: #FF0040}
+    100% {background-color: #FF0000}
+  }
+  @keyframes rainbow2 {
+    0% {background-color: #FF0000}
+    4% {background-color: #FF4000}
+    8% {background-color: #FF8000}
+    12% {background-color: #FFBF00}
+    16% {background-color: #FFFF00}
+    20% {background-color: #BFFF00}
+    24% {background-color: #80FF00}
+    28% {background-color: #40FF00}
+    36% {background-color: #00FF00}
+    40% {background-color: #00FF40}
+    44% {background-color: #00FF80}
+    48% {background-color: #00FFBF}
+    52% {background-color: #40FFFF}
+    56% {background-color: #80DFFF}
+    60% {background-color: #80BFFF}
+    64% {background-color: #809FFF}
+    68% {background-color: #8080FF}
+    72% {background-color: #9F80FF}
+    76% {background-color: #BF80FF}
+    80% {background-color: #DF80FF}
+    84% {background-color: #FF80FF}
+    88% {background-color: #FF40CF}
+    92% {background-color: #FF409F}
+    96% {background-color: #FF3366}
+    100% {background-color: #FF3333}
   }
 
   .grid {
