@@ -96,19 +96,19 @@
     animation-play-state: running;
     visibility: visible;
   }
-  .dotMax:active .dotBig {
+  .dotMax:hover .dotBig {
    animation-play-state: running;
    visibility: visible;
   }
-  .dotMax:active .dotMedium {
+  .dotMax:hover .dotMedium {
    animation-play-state: running;
    visibility: visible;
   }
-  .dotMax:active .dotSmall {
+  .dotMax:hover .dotSmall {
    animation-play-state: running;
    visibility: visible;
   }
-  .dotMax:active .dotTiny {
+  .dotMax:hover .dotTiny {
    animation-play-state: running;
    visibility: visible;
   }

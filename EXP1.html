@@ -24,7 +24,7 @@
                 <div class="dotMedium"></div>
                 <div class="dotSmall"></div>
                 <div class="dotTiny"></div>
-              </div>  
+              </div>
             </div>
           </div>
       </div>
@@ -33,5 +33,14 @@
                 <a href="index.html">HOME</a>
             </div>
       </div>
+      <script>
+// detect touch
+	if (!("ontouchstart" in document.documentElement)) {
+  	document.documentElement.className += " touch";
+	}
+$('.phone-buttons .btn').on('touchstart touchend', function(e) {
+    $(this).toggleClass('over');
+});
+</script>
     </body>
 </html>
